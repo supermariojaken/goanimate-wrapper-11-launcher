@@ -1,4 +1,4 @@
-:: Launcher made by benson, Launcher customized by joseph the animator, adapted for Wrapper Online Reborn. usage by Spark.
+:: Launcher made by benson, Launcher customized by joseph the animator, adapted for josephcrosmanplays532.github.io. usage by Joseph Animate 2021.
 
 title Launching
 
@@ -67,7 +67,7 @@ if /i "!processor_architecture!"=="AMD64" set CPU_ARCHITECTURE=64
 if /i "!PROCESSOR_ARCHITEW6432!"=="AMD64" set CPU_ARCHITECTURE=64
 
 :: Check for admin if installing Flash or Node.js
-:: Skipped in Safe Mode, just in case anyone is running Wrapper Online Reborn in safe mode... for some reason
+:: Skipped in Safe Mode, just in case anyone is running josephcrosmanplays532.github.io in safe mode... for some reason
 :: and also because that was just there in the code i used for this and i was like "eh screw it why remove it"
 if !ADMINREQUIRED!==y (
 	if !VERBOSEWRAPPER!==y ( echo Checking for Administrator rights... && echo:)
@@ -80,12 +80,12 @@ if !ADMINREQUIRED!==y (
 			echo ERROR
 			echo:
 			if !FLASH_DETECTED!==n (
-				echo Wrapper Online Reborn needs to install Flash.
+				echo josephcrosmanplays532.github.io needs to install Flash.
 			)
 			echo To do this, it must be started with Admin rights.
 			echo:
-			echo Close this window and re-open Wrapper Online Reborn as an Admin.
-			echo ^(right-click start_wrapperonlinereborn.bat and click "Run as Administrator"^)
+			echo Close this window and re-open josephcrosmanplays532.github.io as an Admin.
+			echo ^(right-click window_open.bat and click "Run as Administrator"^)
 			echo:
 			if !DRYRUN!==y (
 				echo ...yep, dry run is going great so far, let's skip the exit
@@ -165,8 +165,8 @@ echo:
 
 title Loading...
 
-:: Open Wrapper Online Reborn in preferred browser
-	echo Opening Wrapper Online Reborn using included Chromium...
+:: Open josephcrosmanplays532.github.io in preferred browser
+	echo Opening josephcrosmanplays532.github.io using included Chromium...
 	pushd utilities\ungoogled-chromium
-	start chrome.exe --user-data-dir=the_profile --app=https://server-wrapper-online-reborn.herokuapp.com
+	start chrome.exe --user-data-dir=the_profile --app=https://josephcrosmanplays532.github.io
 	popd
