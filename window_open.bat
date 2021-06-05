@@ -67,7 +67,7 @@ if /i "!processor_architecture!"=="AMD64" set CPU_ARCHITECTURE=64
 if /i "!PROCESSOR_ARCHITEW6432!"=="AMD64" set CPU_ARCHITECTURE=64
 
 :: Check for admin if installing Flash or Node.js
-:: Skipped in Safe Mode, just in case anyone is running josephcrosmanplays532.github.io in safe mode... for some reason
+:: Skipped in Safe Mode, just in case anyone is running goanimate-wrapper-11.herokuapp.com in safe mode... for some reason
 :: and also because that was just there in the code i used for this and i was like "eh screw it why remove it"
 if !ADMINREQUIRED!==y (
 	if !VERBOSEWRAPPER!==y ( echo Checking for Administrator rights... && echo:)
@@ -84,7 +84,7 @@ if !ADMINREQUIRED!==y (
 			)
 			echo To do this, it must be started with Admin rights.
 			echo:
-			echo Close this window and re-open josephcrosmanplays532.github.io as an Admin.
+			echo Close this window and re-open goanimate-wrapper-11.herokuapp.com as an Admin.
 			echo ^(right-click window_open.bat and click "Run as Administrator"^)
 			echo:
 			if !DRYRUN!==y (
@@ -166,7 +166,7 @@ echo:
 title Loading...
 
 :: Open josephcrosmanplays532.github.io in preferred browser
-	echo Opening josephcrosmanplays532.github.io using included Chromium...
+	echo Opening goanimate-wrapper-11.herokuapp.com using included Chromium...
 	pushd utilities\ungoogled-chromium
-	start chrome.exe --user-data-dir=the_profile --app=https://josephcrosmanplays532.github.io
+	start chrome.exe --user-data-dir=the_profile --app=https://goanimate-wrapper-11.herokuapp.com
 	popd
